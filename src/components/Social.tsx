@@ -9,7 +9,7 @@ import {
 } from "react-share";
 
 export const SocialMedias = () => {
-  const url = 'https://marketplace.mintbase.xyz';
+  const url = 'https://t.me/+jhbGFMvCZBA4YTMy';
   const title = "Mintbase Templates - Marketplace";
 
   return (
