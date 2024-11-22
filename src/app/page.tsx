@@ -2,8 +2,8 @@ import LandingPage from "@/components/Landing";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bitte Simple Marketplace Example",
-  description: "Simple Marketplace",
+  title: "YupLand Bazzzar",
+  description: "Marketplace of Yupland",
   openGraph: {
     images: ["https://i.imgur.com/FjcUss9.png"],
   },
