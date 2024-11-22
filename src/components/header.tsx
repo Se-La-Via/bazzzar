@@ -1,7 +1,21 @@
 "use client";
 import { useBitteWallet } from "@mintbase-js/react";
+import { setupWalletSelector } from  "@near-wallet-selector/core";
+import { setupMintbaseWallet } from  "@mintbase-js/wallet";
 import { MbButton } from "mintbase-ui";
 import Link from "next/link";
+
+const  mintbaseWallet = setupMintbaseWallet({
+    networkId:  'mainnet',
+    walletUrl:  'https://wallet.mintbase.xyz',
+    callbackUrl:  'https://www.mywebsite.com',
+    deprecated:  false,
+});
+
+const  selector = await  setupWalletSelector({
+    network:  "mainnet",
+    modules: [mintbaseWallet],
+});
 
 const Header = () => {
   const { isConnected, connect, activeAccountId, disconnect } =
