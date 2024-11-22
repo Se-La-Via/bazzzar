@@ -4,14 +4,8 @@
 
 import GitHubButton from "react-github-btn";
 import {
-  FacebookIcon,
-  FacebookShareButton,
-  LinkedinIcon,
-  LinkedinShareButton,
   TelegramIcon,
   TelegramShareButton,
-  TwitterShareButton,
-  XIcon,
 } from "react-share";
 
 export const SocialMedias = () => {
@@ -31,19 +25,9 @@ export const SocialMedias = () => {
           Star
         </GitHubButton>{" "}
         <div className="social-networks">
-          <FacebookShareButton url={url}>
-            <FacebookIcon size={24} round />
-          </FacebookShareButton>
-          <TwitterShareButton url={url} title={title}>
-            <XIcon size={24} round />
-          </TwitterShareButton>
-
           <TelegramShareButton url={url} title={title}>
             <TelegramIcon size={24} round />
           </TelegramShareButton>
-          <LinkedinShareButton url={url}>
-            <LinkedinIcon size={24} round />
-          </LinkedinShareButton>
         </div>
       </div>
     </div>
